@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./About.scss";
 import { urlfor, client } from "../../clients";
-
+import AppWrapper from "../../wrapper/AppWrapper";
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
@@ -43,4 +43,4 @@ const About = () => {
     </>
   );
 };
-export default About;
+export default AppWrapper(About, "about");
